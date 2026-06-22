@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.hero {
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)),
+        url("assets/bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    width: 180px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 180px;
+
+    position: relative;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-right: 35px;
+}
+
+.lang select {
+    border: 2px solid transparent;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px 10px;
+    font-size: 20px;
+    border: 1px solid gray;
+}
+
+.signin {
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.signin:hover {
+    background-color: rgb(212, 1, 1);
+}
+
+.midcont {
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateY(-30px);
+}
+
+.midcont h1 {
+    font-size: 75px;
+    font-weight: 750;
+    -webkit-text-stroke: 1px white;
+    max-width: 700px;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.startsat149 {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.readytowatch {
+    font-size: 20px;
+    max-width: 700px;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 300;
+}
+
+.emailandstarted {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.emailandstarted input {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid gray;
+    border-radius: 4px;
+    width: 450px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 15px;
+    opacity: 0.7;
+}
+
+.getstarted {
+    background-color: red;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    width: 250px;
+    padding: 0px 20px;
+    font-size: 30px;
+    font-weight: 550;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.getstarted:hover {
+    background-color: rgb(212, 1, 1);
+}
+
+.separator {
+    position: relative;
+    height: 120px;
+    overflow: hidden;
+    background: black;
+}
+
+.hero2 {
+    background-color: black;
+    min-height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+
+.curve {
+    position: absolute;
+    top: 0;
+    left: -15%;
+
+    width: 130%;
+    height: 100px;
+
+    border-top: 4px solid #e50914;
+
+    border-radius: 50% 50% 0 0;
+
+    background: radial-gradient(ellipse at center top,
+            rgba(0, 70, 255, 0.8) 0%,
+            rgba(0, 30, 120, 0.5) 30%,
+            black 75%);
+}
+
+.trend {
+    color: white;
+    padding: 0px 190px;
+    transform: translateY(-40px);
+    font-size: 15px;
+}
+
+.top5 {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+}
+
+.card {
+    width: 230px;
+    height: 300px;
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    position: relative;
+
+    transition: transform 0.1s ease 0.1s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.poster {
+    position: absolute;
+    inset: 0;
+
+    border-radius: 12px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.poster1 {
+    background-image: url("assets/trend1.webp");
+}
+
+.poster2 {
+    background-image: url("assets/trend2.webp");
+}
+
+.poster3 {
+    background-image: url("assets/trend3.webp");
+}
+
+.poster4 {
+    background-image: url("assets/trend4.webp");
+}
+
+.poster5 {
+    background-image: url("assets/trend5.webp");
+}
+
+.rank {
+    position: absolute;
+
+    left: -28px;
+    bottom: -10px;
+
+    z-index: 2;
+
+    font-size: 130px;
+    font-weight: 900;
+    line-height: 1;
+
+    color: black;
+    -webkit-text-stroke: 3px white;
+}
+
+.more {
+    color: white;
+    padding: 0px 190px;
+    transform: translateY(-40px);
+    font-size: 15px;
+
+    margin-top: 130px;
+}
+
+.reason {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    margin-top: -20px;
+}
+
+.box {
+    width: 360px;
+    height: 340px;
+    color: white;
+    border-radius: 16px;
+    background: linear-gradient(135deg,
+            #1a2144 0%,
+            #201132 65%,
+            #2b1020 100%);
+    font-size: 25px;
+
+    padding: 30px 20px;
+
+    position: relative;
+
+}
+
+.box p {
+    margin-top: 30px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.box svg {
+    width: 90px;
+    height: 90px;
+
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.faq {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 80px 190px;
+}
+
+.faqs {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    align-items: center;
+    list-style: none;
+    margin-top: -60px;
+}
+
+.faqs button {
+    background-color: rgb(45, 45, 45);
+    border: none;
+    width: 1530px;
+    height: 100px;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 0px 40px;
+    cursor: pointer;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faqs button:hover {
+    background-color: rgb(60, 60, 60);
+}
+
+.endcont {
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 50px;
+}
+
+.readytowatch2 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+.emailandstarted2 {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.emailandstarted2 input {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid gray;
+    border-radius: 4px;
+    width: 700px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 15px;
+}
+
+.getstarted2 {
+    background-color: red;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    width: 250px;
+    padding: 0px 20px;
+    font-size: 30px;
+    font-weight: 550;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.getstarted2:hover {
+    background-color: rgb(212, 1, 1);
+}
+
+.end {
+    color: rgb(183, 183, 183);
+    font-size: 20px;
+    font-weight: 540;
+    margin: 120px 190px 0px 190px;
+    padding-bottom: 120px;
+}
+
+.number {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footbtns {
+    margin: 60px 0px;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 540;
+    text-decoration: underline;
+    cursor: pointer;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 20px;
+}
+
+.lang2 select {
+    border: 2px solid transparent;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px 10px;
+    font-size: 20px;
+    border: 1px solid gray;
+}
+
+.netindia {
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.bot {
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+@media (max-width:768px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .right {
+        margin-right: 0;
+        gap: 8px;
+    }
+
+    .lang select {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .signin {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .hero {
+        min-height: 100vh;
+    }
+
+    .midcont {
+        padding: 0 20px;
+        transform: none;
+    }
+
+    .midcont h1 {
+        font-size: 34px;
+        max-width: 100%;
+        line-height: 1.1;
+        text-align: center;
+    }
+
+    .startsat149 {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .readytowatch {
+        font-size: 14px;
+        max-width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .emailandstarted {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .emailandstarted input {
+        width: 100%;
+        max-width: none;
+        font-size: 16px;
+        padding: 16px 12px;
+    }
+
+    .getstarted {
+        width: 100%;
+        max-width: 220px;
+        height: 55px;
+        font-size: 22px;
+    }
+
+    .trend,
+    .more,
+    .faq {
+        padding: 0 20px;
+        transform: none;
+    }
+
+    .trend h1,
+    .more h1 {
+        font-size: 24px;
+    }
+
+    .more {
+        margin-top: 80px;
+    }
+
+    .top5 {
+        justify-content: flex-start;
+        gap: 10px;
+        overflow-x: auto;
+        padding: 0 20px;
+        scrollbar-width: none;
+    }
+
+    .top5::-webkit-scrollbar {
+        display: none;
+    }
+
+    .card {
+        width: 150px;
+        height: 220px;
+        flex-shrink: 0;
+    }
+
+    .rank {
+        font-size: 85px;
+        left: -15px;
+        bottom: -5px;
+        -webkit-text-stroke: 2px white;
+    }
+
+    .reason {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 0 20px;
+        margin-top: 10px;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 100%;
+        min-height: 220px;
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .box h3 {
+        font-size: 20px;
+    }
+
+    .box p {
+        font-size: 16px;
+    }
+
+    .box svg {
+        width: 70px;
+        height: 70px;
+    }
+
+    .faq {
+        padding-top: 50px;
+        font-size: 16px;
+    }
+
+    .faq h2 {
+        font-size: 24px;
+    }
+
+    .faqs {
+        padding: 0 20px;
+        margin-top: 0;
+    }
+
+    .faqs button {
+        width: 100%;
+        min-height: 70px;
+        height: auto;
+        font-size: 16px;
+        padding: 18px;
+    }
+
+    .endcont {
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+
+    .readytowatch2 {
+        font-size: 14px;
+    }
+
+    .emailandstarted2 {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .emailandstarted2 input {
+        width: 100%;
+        max-width: none;
+        font-size: 16px;
+        padding: 16px 12px;
+    }
+
+    .getstarted2 {
+        width: 100%;
+        max-width: 220px;
+        height: 55px;
+        font-size: 22px;
+    }
+
+    .end {
+        margin: 50px 20px 0 20px;
+        padding-bottom: 50px;
+        font-size: 14px;
+    }
+
+    .footbtns {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        font-size: 14px;
+    }
+
+    .lang2 select {
+        font-size: 14px;
+    }
+
+    .netindia {
+        font-size: 14px;
+    }
+
+    .bot {
+        font-size: 12px;
+    }
+
+}
